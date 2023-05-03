@@ -7,7 +7,7 @@ const nunitoFont = ["Nunito", "sans-serif"].join(",");
 export const theme = createTheme({
   palette: {
     primary: {
-      main: "#394867",
+      main: "#10A37F",
       contrastText: "#fff",
     },
     text: {
