@@ -12,11 +12,7 @@ const NavbarItem: React.FC<{ children: React.ReactNode; path: string }> = ({
   const [active, setActive] = React.useState(false);
 
   React.useEffect(() => {
-    if (router.pathname === path) {
-      setActive(true);
-    } else {
-      setActive(false);
-    }
+    setActive(router.pathname === path);
   }, [router.pathname, path]);
 
   return (

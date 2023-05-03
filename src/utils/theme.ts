@@ -4,6 +4,14 @@ import { blueGrey, deepOrange, grey, indigo } from "@mui/material/colors";
 const firaSansFont = ["Fira Sans", "sans-serif"].join(",");
 const nunitoFont = ["Nunito", "sans-serif"].join(",");
 
+declare module "@mui/material/styles" {
+  interface Palette {}
+  interface TypeBackground {
+    lighter: string;
+  }
+  interface PaletteOptions {}
+}
+
 export const theme = createTheme({
   palette: {
     primary: {
@@ -16,6 +24,7 @@ export const theme = createTheme({
     },
     background: {
       default: grey[900],
+      lighter: grey[800],
       paper: "#212A3E",
     },
     secondary: {
@@ -76,7 +85,7 @@ export const theme = createTheme({
         },
         text: {
           "&:hover": {
-            backgroundColor: "#fff",
+            // backgroundColor: "#fff",
           },
         },
       },
