@@ -1,6 +1,6 @@
 import { Stack } from "@mui/material";
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar/Navbar";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (

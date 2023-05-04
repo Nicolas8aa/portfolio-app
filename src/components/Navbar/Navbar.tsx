@@ -88,9 +88,9 @@ const Navbar = () => {
         </Link>
       </Typography>
       <Stack direction="row" spacing={7}>
+        <NavbarItem path="/">Home</NavbarItem>
         <NavbarItem path="/about">About</NavbarItem>
         <NavbarItem path="/projects">Projects</NavbarItem>
-        {/* <NavbarItem>Contact</NavbarItem> */}
       </Stack>
       <Stack direction="row">
         <IconButton
